@@ -1,0 +1,33 @@
+service: example
+custom: 
+  encodeEnvObjects:
+    - VAR1
+    - VAR4
+  
+plugins:
+  - serverless-base64-encode-env-vars
+  
+provider:
+  ...
+  environment:
+    VAR1:
+      KEY1: value1
+      KEY2: value2
+      KEY3: value3
+
+    VAR2: Normal string
+
+functions:
+
+  function1:
+    handler: function1.main
+    environment:
+      VAR3: Just a string
+      VAR4:
+        KEY1: value1
+        KEY2: value2
+        KEY3: value3
+    events:
+      - http:
+          path: /
+          method: post

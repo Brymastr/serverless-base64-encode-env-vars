@@ -57,4 +57,4 @@ jspm_packages
 *.dat
 *.out
 **/.idea
-.serverless
+.serverless*

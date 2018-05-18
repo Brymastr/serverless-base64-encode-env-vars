@@ -1,20 +1,25 @@
 {
-  "name": "serverless-plugin-encode-env-var-objects",
-  "version": "1.0.0",
-  "description": "",
+  "name": "serverless-base64-encode-env-vars",
+  "version": "0.0.3",
+  "author": "Brycen Dorsay <dorsay@live.ca>",
+  "description": "A serverless plugin to base64 encode environment variables that are objects",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Brymastr/serverless-plugin-encode-env-var-objects.git"
+    "url": "git+https://github.com/Brymastr/serverless-base64-encode-env-vars.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "serverless",
+    "serverless plugin",
+    "nodejs",
+    "environment"
+  ],
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Brymastr/serverless-plugin-encode-env-var-objects/issues"
+    "url": "https://github.com/Brymastr/serverless-base64-encode-env-vars/issues"
   },
-  "homepage": "https://github.com/Brymastr/serverless-plugin-encode-env-var-objects#readme"
+  "homepage": "https://github.com/Brymastr/serverless-base64-encode-env-vars#readme"
 }
