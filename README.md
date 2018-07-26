@@ -1,5 +1,7 @@
 # serverless-base64-encode-env-vars
 
+[![npm version](https://badge.fury.io/js/serverless-base64-encode-env-vars.svg)](https://badge.fury.io/js/serverless-base64-encode-env-vars)
+
 A serverless plugin to base64 encode environment variables that are objects.
 
 The Serverless framework forces all environment variables defined in a serverless.yml to be strings. It can be useful to define environment variables as objects for better organization and a simplified top-level environment.
