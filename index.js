@@ -10,6 +10,11 @@ class EncodeEnvironmentVariables {
           'run',
         ]
       },
+      deploy: {
+        lifecycleEvents: [
+          'resources'
+        ]
+      }
     };
 
     this.hooks = {

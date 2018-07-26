@@ -1,6 +1,6 @@
 {
   "name": "serverless-base64-encode-env-vars",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "author": "Brycen Dorsay <dorsay@live.ca>",
   "description": "A serverless plugin to base64 encode environment variables that are objects",
   "main": "index.js",
