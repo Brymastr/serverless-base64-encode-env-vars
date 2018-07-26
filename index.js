@@ -8,34 +8,20 @@ class EncodeEnvironmentVariables {
         usage: 'Nothing, just run',
         lifecycleEvents: [
           'run',
-        ],
-        options: {
-          run: {
-            usage: 'run',
-            required: false
-          }
-        }
-      },
-      offline: {
-        lifecycleEvents: [
-          'start'
         ]
       },
-      deploy: {
-        lifecycleEvents: [
-          'resources'
-        ]
-      }
     };
 
     this.hooks = {
-      'before:offline:start': this.beforeDeploy.bind(this),
-      'before:deploy:resources': this.beforeDeploy.bind(this),
-      'before:encode:run': this.beforeDeploy.bind(this),
+      'before:offline:start': this.before.bind(this),
+      'before:offline:start:init': this.before.bind(this),
+      'before:deploy:resources': this.before.bind(this),
+      'before:encode:run': this.before.bind(this),
+      'before:invoke:local:invoke': this.before.bind(this),
     };
   }
 
-  beforeDeploy() {
+  before() {
     const providerEncoded = this.encodeProviderVariables();
     const functionEncoded = this.encodeFunctionVariables();
     
