@@ -20,6 +20,7 @@ class EncodeEnvironmentVariables {
     this.hooks = {
       'before:offline:start': this.before.bind(this),
       'before:offline:start:init': this.before.bind(this),
+      'before:package:initialize': this.before.bind(this),
       'before:deploy:resources': this.before.bind(this),
       'before:encode:run': this.before.bind(this),
       'before:invoke:local:invoke': this.before.bind(this),
